@@ -2,26 +2,22 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
-export default function Buidls() {
+export default function Inspirations() {
   return (
-    <div className='flex flex-col items-center justify-center p-10 min-w-50 h-screen'>
+    <div className='flex flex-col items-center justify-center p-10 w-50 h-screen'>
       <Head>
-        <title>Buidls | Vijeth ☀</title>
-        <meta
-          name='description'
-          content="Vijeth's Personal Real Estate on the Internet to Showoff his Buidls"
-        />
+        <title>Inspirations | Vijeth ☀</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='max-w-xl font-[Satoshi] mb-auto'>
+      <main className='max-w-xl mb-auto font-[Satoshi]'>
         <Navbar />
         <div className='flex flex-col pb-10'>
-          <h1 className='text-5xl font-bold pb-5'>/buidls</h1>
+          <h1 className='text-5xl font-bold pb-5'>/inspirations</h1>
           <p className='text-gray-700 text-5xl font-["Passions_Conflict"]'>
-            &quot;Per aspera ad astra.&quot;
+            &quot;Dubito ergo cogito, cogito ergo sum.&quot;
           </p>
-          {console.log("Through hardships to the stars")}
+          {console.log("I doubt, therefore I think, I think therefore I am")}
         </div>
         <Template
           title={

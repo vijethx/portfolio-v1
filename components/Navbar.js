@@ -1,40 +1,26 @@
-import Image from "next/image";
 import Link from "next/link";
-import pfp from "../public/pfp.jpg";
 
 const Navbar = () => {
   return (
-    <>
-      <nav className='pb-10'>
-        <ul className='flex items-center justify-end'>
-          <li className='mr-4  font-[Satoshi]'>
-            <Link href={"/"}>/home</Link>
-          </li>
-          <li className='mr-4'>
-            <Link href={"/buidls"}>/buidls</Link>
-          </li>
-          <li className=''>
-            <Link href={"/blogs"}>/blogs</Link>
-          </li>
-        </ul>
-      </nav>
-      <div className='flex items-center justify-between pb-10'>
-        <div className='flex flex-col '>
-          <h1 className='text-3xl font-bold '>Vijeth Revankar</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Architecto, cum?
-          </p>
-        </div>
-        <Image
-          src={pfp}
-          height={"200px"}
-          width={"200px"}
-          alt='pfp'
-          className='rounded-full'
-        />
-      </div>
-    </>
+    <nav className='pb-10 font-[Satoshi] flex items-center justify-between'>
+      <h1 className='text-xl font-bold'>
+        <Link href={"/"}>vijethx</Link>
+      </h1>
+      <ul className='flex items-center justify-end'>
+        <li className='mr-3 hover:underline'>
+          <Link href={"/buidls"}>/buidls</Link>
+        </li>
+        <li className='mr-3 hover:underline'>
+          <Link href={"/writings"}>/writings</Link>
+        </li>
+        <li className='mr-3 hover:underline'>
+          <Link href={"/inspirations"}>/inspirations</Link>
+        </li>
+        <li className=' hover:underline'>
+          <Link href={"/resources"}>/resources</Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

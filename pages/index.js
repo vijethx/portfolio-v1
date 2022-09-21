@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import TechStack from "../components/TechStack";
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center justify-center p-10 w-50 h-screen'>
+    <div className='flex flex-col items-center justify-center p-10 min-h-screen'>
       <Head>
         <title>Vijeth ☀</title>
         <meta
@@ -16,8 +17,15 @@ export default function Home() {
 
       <main className='max-w-xl font-[Satoshi] mb-auto'>
         <Navbar />
+        <div className='pb-5'>
+          <h1 className='text-5xl font-bold pb-5'>Vijeth Revankar</h1>
+          <p className='text-gray-700 text-lg'>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Architecto, cum?
+          </p>
+        </div>
 
-        <p>home</p>
+        <TechStack />
       </main>
 
       <Footer />
