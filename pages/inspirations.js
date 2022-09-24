@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 export default function Inspirations() {
   return (
-    <div className='m-10'>
+    <div className='m-10 min-h-screen'>
       <Head>
         <title>Inspirations | Vijeth ☀</title>
         <link rel='icon' href='/favicon.ico' />
@@ -12,40 +12,72 @@ export default function Inspirations() {
 
       <main className='container flex flex-col max-w-xl mx-auto'>
         <Navbar />
-        <div className='flex flex-col pb-10'>
-          <h1 className='text-5xl font-bold pb-5'>/inspirations</h1>
-          <p className='text-gray-700 text-5xl font-["Passions_Conflict"]'>
-            &quot;Dubito ergo cogito, cogito ergo sum.&quot;
-          </p>
-          {console.log("I doubt, therefore I think, I think therefore I am")}
+        <div className='flex flex-col pb-5'>
+          <h1 className='text-4xl md:text-5xl font-bold pb-5'>/inspirations</h1>
         </div>
         <Template
-          title={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, consectetur?"
+          title={"Bitcoin: A Peer-to-Peer Electronic Cash System"}
+          url={"https://bitcoin.org/bitcoin.pdf"}
+        />
+        <Template
+          title={"Ethereum Whitepaper (Updated)"}
+          url={"https://ethereum.org/en/whitepaper/"}
+        />
+        <Template
+          title={"Vitalik Buterin's Website"}
+          url={"https://vitalik.ca/"}
+        />
+        <Template
+          title={"samczsun's posts (on Paradigm's website)"}
+          url={"https://www.paradigm.xyz/team/samczsun/posts"}
+        />
+        <Template
+          title={"Paradigm Research"}
+          url={"https://www.paradigm.xyz/writing"}
+        />
+        <Template
+          title={"Officer CIA (Security)"}
+          url={"https://start.me/p/QRg5ad/officercia"}
+        />
+        <Template title={"Immersion Den"} url={"https://immersionden.xyz/"} />
+        <Template
+          title={"Learn How to Build for the Creator Economy by Li Jin"}
+          url={"https://creatoreconomycourse.xyz/"}
+        />
+        <Template
+          title={"Library of Web3 - Alex D Phan"}
+          url={"https://www.alexdphan.com/research/library-of-web3"}
+        />
+        <Template
+          title={"Token Engineering Community"}
+          url={"https://tokenengineeringcommunity.github.io/website/"}
+        />
+        <Template
+          title={"TE Fundamentals Study Groups"}
+          url={
+            "https://te-academy.notion.site/TE-Fundamentals-Study-Groups-f804dba0577e44578f56c853c20cc91d"
           }
-          url={"https://vijeth.vercel.app"}
-          desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et optio minima tempora sed, labore error? At quasi veritatis aut mollitia placeat labore tenetur molestiae commodi!"
-          }
+        />
+        <Template
+          title={"BuidlersTribe Research"}
+          url={"https://research.buidlerstribe.com/"}
         />
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
 
-const Template = ({ title, desc, url }) => {
+const Template = ({ title, url }) => {
   return (
-    <div className='flex justify-between pb-1'>
-      <a
-        href={url}
-        target='_blank'
-        className='font-bold text-md text-sky-800'
-        rel='noreferrer'>
-        {title}
-        <p className='text-gray-400 text-md font-normal text-justify'>{desc}</p>
-      </a>{" "}
+    <div className='flex flex-col pb-2'>
+      <div className='flex align-center space-x-2'>
+        <span className=''>⚡</span>
+        <a href={url} className='text-justify underline underline-offset-4'>
+          {title}
+        </a>
+      </div>
     </div>
   );
 };

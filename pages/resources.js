@@ -12,40 +12,26 @@ export default function Resources() {
 
       <main className='container flex flex-col max-w-xl mx-auto'>
         <Navbar />
-        <div className='flex flex-col pb-10'>
-          <h1 className='text-5xl font-bold pb-5'>/resources</h1>
-          <p className='text-gray-700 text-5xl font-["Passions_Conflict"]'>
-            &quot;Audentes fortuna iuvat.&quot;
-          </p>
-          {console.log("Fortune favours the bold")}
+        <div className='flex flex-col pb-5'>
+          <h1 className='text-4xl md:text-5xl font-bold pb-5'>/resources</h1>
         </div>
-        <Template
-          title={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, consectetur?"
-          }
-          url={"https://vijeth.vercel.app"}
-          desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et optio minima tempora sed, labore error? At quasi veritatis aut mollitia placeat labore tenetur molestiae commodi!"
-          }
-        />
+        WIP
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
 
-const Template = ({ title, desc, url }) => {
+const Template = ({ title, url }) => {
   return (
-    <div className='flex justify-between pb-1'>
-      <a
-        href={url}
-        target='_blank'
-        className='font-bold text-md text-sky-800'
-        rel='noreferrer'>
-        {title}
-        <p className='text-gray-400 text-md font-normal text-justify'>{desc}</p>
-      </a>{" "}
+    <div className='flex flex-col pb-2'>
+      <div className='flex align-center space-x-2'>
+        <span className=''>💎</span>
+        <a href={url} className='text-justify underline underline-offset-4'>
+          {title}
+        </a>
+      </div>
     </div>
   );
 };
