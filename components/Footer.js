@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className='font-[Satoshi] static bottom-0'>
-      <p className=''>
+    <div className='font-[Satoshi] container flex flex-col max-w-xl py-5 mx-auto'>
+      <p className='text-center'>
         Build with a{" "}
         <a
           className=' text-sky-600 hover:underline'

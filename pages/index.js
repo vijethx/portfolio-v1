@@ -5,7 +5,7 @@ import TechStack from "../components/TechStack";
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center justify-center p-10 min-h-screen'>
+    <div className='m-4 md:m-10'>
       <Head>
         <title>Vijeth ☀</title>
         <meta
@@ -15,7 +15,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='max-w-xl font-[Satoshi] mb-auto'>
+      <main className='font-[Satoshi] container flex flex-col max-w-xl mx-auto'>
         <Navbar />
         <div className='pb-5'>
           <h1 className='text-5xl font-bold pb-5'>Vijeth Revankar</h1>

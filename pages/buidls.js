@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 export default function Buidls() {
   return (
-    <div className='flex flex-col items-center justify-center p-10 min-w-50 h-screen'>
+    <div className='m-10'>
       <Head>
         <title>Buidls | Vijeth ☀</title>
         <meta
@@ -14,7 +14,7 @@ export default function Buidls() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='max-w-xl font-[Satoshi] mb-auto'>
+      <main className='container flex flex-col max-w-xl mx-auto'>
         <Navbar />
         <div className='flex flex-col pb-10'>
           <h1 className='text-5xl font-bold pb-5'>/buidls</h1>

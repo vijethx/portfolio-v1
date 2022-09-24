@@ -1,12 +1,12 @@
 import Image from "next/image";
-import logo1 from "../public/logo-1.png";
-import logo2 from "../public/logo-2.png";
-import logo3 from "../public/logo-3.png";
-import logo4 from "../public/logo-4.png";
-import logo5 from "../public/logo-5.png";
-import logo6 from "../public/logo-6.png";
-import logo7 from "../public/logo-7.png";
-import logo8 from "../public/logo-8.png";
+import logo1 from "../public/logo-1.svg";
+import logo2 from "../public/logo-2.svg";
+import logo3 from "../public/logo-3.svg";
+import logo4 from "../public/logo-4.svg";
+import logo5 from "../public/logo-5.svg";
+import logo6 from "../public/logo-6.svg";
+import logo7 from "../public/logo-7.svg";
+import logo8 from "../public/logo-8.svg";
 
 const TechStack = () => {
   return (
