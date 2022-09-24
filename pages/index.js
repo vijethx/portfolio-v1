@@ -5,7 +5,7 @@ import TechStack from "../components/TechStack";
 
 export default function Home() {
   return (
-    <div className='m-4 md:m-10'>
+    <div className='m-10'>
       <Head>
         <title>Vijeth ☀</title>
         <meta
