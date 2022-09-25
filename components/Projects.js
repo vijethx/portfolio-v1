@@ -4,7 +4,6 @@ const Projects = () => {
       <h1 className='text-xl font-bold py-5 underline underline-offset-4'>
         /buidls
       </h1>
-
       <div className='flex flex-col space-y-5'>
         <Template
           name={"WavePortal"}
@@ -22,6 +21,18 @@ const Projects = () => {
           code={`https://github.com/vijethx/BuyMeACoffee-frontend`}
           live={`https://vijethx-buymeacoffee.vercel.app/`}
         />
+      </div>
+      <div className='flex space-x-2'>
+        <p className=''>
+          ... and{" "}
+          <a
+            className='text-purple-600 font-bold '
+            href='https://github.com/vijethx'
+            target='_blank'
+            rel='noopener noreferrer'>
+            more
+          </a>
+        </p>
       </div>
     </div>
   );
@@ -69,9 +80,9 @@ const Template = ({ name, desc, code, live, techUsed }) => {
           </a>
         </div>
       </div>
-      <p className=''>{desc}</p>
-      <p className=''>
-        <span className='font-bold underline underline-offset-2'>
+      <p className='italic'>{desc}</p>
+      <p className='italic'>
+        <span className='font-bold underline underline-offset-2 not-italic'>
           Tech & tools used
         </span>
         : {techUsed}

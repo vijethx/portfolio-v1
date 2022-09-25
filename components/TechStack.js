@@ -7,39 +7,36 @@ const TechStack = () => {
 
       <div className='flex flex-col md:flex-row md:justify-between space-y-3 md:space-y-0'>
         <div className='flex flex-col space-y-3'>
-          <Template name={"NextJS"} active={true} />
-          <Template name={"JavaScript"} active={true} />
-          <Template name={"Tailwind"} active={true} />
-          <Template name={"ChakraUI"} active={true} />
-          <Template name={"Solidity"} active={true} />
-          <Template name={"Hardhat"} active={true} />
+          <Tech name={"NextJS"} active={true} />
+          <Tech name={"JavaScript"} active={true} />
+          <Tech name={"Tailwind"} active={true} />
+          <Tech name={"ChakraUI"} active={true} />
+          <Tech name={"Solidity"} active={true} />
+          <Tech name={"Hardhat"} active={true} />
         </div>
         <div className='flex flex-col space-y-3'>
-          <Template name={"NodeJS"} active={true} />
-          <Template name={"React Query"} active={true} />
-          <Template name={"GraphQL"} />
-          <Template name={"TypeScript"} />
-          <Template name={"Redux"} />
-          <Template name={"Python"} />
+          <Tech name={"NodeJS"} active={true} />
+          <Tech name={"React Query"} active={true} />
+          <Tech name={"GraphQL"} />
+          <Tech name={"TypeScript"} />
+          <Tech name={"Redux"} />
+          <Tech name={"Python"} />
         </div>
         <div className='flex flex-col space-y-3'>
-          <Template name={"PostgreSQL"} />
-          <Template name={"Web Security"} />
-          <Template name={"Foundry"} />
+          <Tech name={"PostgreSQL"} />
+          <Tech name={"Web Security"} />
+          <Tech name={"Foundry"} />
+          <Tech name={"React Native"} />
         </div>
         {/* <div className='flex flex-col space-y-3'>
-          <Template name={"Figma"} active={true} />
-          <Template name={"Solidity"} />
-          <Template name={"Hardhat"} />
-          <Template name={"Tailwind"} />
-          <Template name={"ChakraUI"} />
+          
         </div> */}
       </div>
     </div>
   );
 };
 
-const Template = ({ name, active }) => {
+const Tech = ({ name, active }) => {
   return (
     <div className=' '>
       <div className='flex space-x-2'>
