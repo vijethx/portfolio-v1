@@ -26,7 +26,7 @@ export default function Home() {
           property='og:description'
           content="Vijeth's real estate on the internet to showoff his buidls"
         />
-        <meta property='og:image' content='public/luffy.jpg' />
+        <meta property='og:image' content='/luffy.jpg' />
 
         {/* Twitter */}
         <meta property='twitter:card' content='summary_large_image' />
@@ -36,7 +36,7 @@ export default function Home() {
           property='twitter:description'
           content="Vijeth's real estate on the internet to showoff his buidls"
         />
-        <meta property='twitter:image' content='public/luffy.jpg' />
+        <meta property='twitter:image' content='/luffy.jpg' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
