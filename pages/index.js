@@ -65,20 +65,6 @@ export default function Home() {
               month till Dec &apos;22
             </p>
             <p className=''>
-              <span className=''>💻</span> Building{" "}
-              <a
-                className='underline underline-offset-2 text-sky-600'
-                href='https://declutr.xyz'
-                target='_blank'
-                rel='noopener noreferrer'>
-                declutr.xyz
-              </a>{" "}
-              with frens{" "}
-              <span className='italic text-gray-200'>
-                rebuilding it from scratch, stay tuned
-              </span>
-            </p>
-            <p className=''>
               <span className=''>🚀</span> Focusing on getting better at writing
               robust smart contracts, building super-fast web apps and shipping
               products
