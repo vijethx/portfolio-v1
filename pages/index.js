@@ -5,10 +5,11 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import TechStack from "../components/TechStack";
+import Image from "next/image";
 
 export default function Home() {
 	return (
-		<div className="m-10">
+		<div className="flex items-center justify-center h-screen">
 			<Head>
 				<title>Vijeth ☀</title>
 				{/* Primary Meta Tags */}
@@ -71,60 +72,71 @@ export default function Home() {
 				/>
 			</Head>
 
-			<main className="font-[Satoshi] container flex flex-col max-w-xl mx-auto">
-				<Navbar />
-				<div className="pb-5">
-					<h1 className="text-4xl md:text-5xl font-bold pb-5 flex">
-						gm! i&apos;m vijeth 👋
-					</h1>
-					<p className="text-gray-700 text-lg py-2">
-						Inquizitive self-taught developer / buildooor with a
-						keen interest on the web and EVM-based blockchains.
-					</p>
-					<div className="text-gray-700 text-lg py-2 flex flex-col space-y-2">
-						<p className="font-bold underline underline-offset-2">
-							What am I doing currently?
-						</p>
-						<p className="">
-							<span className="">🎯</span> Shipping (atleast) one
-							project a month till Dec &apos;22
-						</p>
-						<p className="">
-							<span className="">🚀</span> Focusing on getting
-							better at writing robust smart contracts, building
-							super-fast web apps and shipping products
-						</p>
-					</div>
-					<p className="text-gray-700 text-lg py-2">
-						If you&apos;re building something cool, I&apos;d love to
-						hear about it. Even if you&apos;re not and just want to
-						hang out and chill, i&apos;m pretty much active on{" "}
-						<a
-							href="http://twitter.com/vijethx"
-							target="_blank"
-							className="text-sky-600 underline underline-offset-2 font-bold"
-							rel="noopener noreferrer">
-							twitter
-						</a>
-						.
-					</p>
+			<main className="font-[Satoshi]">
+				{/* <Image
+					src={"/pfp.jpg"}
+					alt="pfp"
+					className="object-cover rounded-full"
+					width={150}
+					height={150}
+				/> */}
+				<div className="flex flex-col gap-2">
+					<h1 className="font-bold text-3xl">Vijeth Revankar</h1>
+					<h3>You can find me on:</h3>
+					<ul>
+						<li>
+							Twitter:{" "}
+							<a
+								className="link-hover"
+								target="_blank"
+								rel="noreferrer"
+								href="http://twitter.com/vijethx">
+								@vijethx
+							</a>
+						</li>
+						<li>
+							GitHub:{" "}
+							<a
+								className="link-hover"
+								target="_blank"
+								rel="noreferrer"
+								href="http://github.com/vijethx">
+								@vijethx
+							</a>
+						</li>
+						<li>
+							Peerlist:{" "}
+							<a
+								className="link-hover"
+								target="_blank"
+								rel="noreferrer"
+								href="http://peerlist.io/vijethx">
+								@vijethx
+							</a>
+						</li>
+						<li>
+							Warpcast:{" "}
+							<a
+								className="link-hover"
+								target="_blank"
+								rel="noreferrer"
+								href="http://warpcast.com/vijethx">
+								@vijethx
+							</a>
+						</li>
+						<li>
+							LinkedIn:{" "}
+							<a
+								className="link-hover"
+								target="_blank"
+								rel="noreferrer"
+								href="http://linkedin.com/in/vijethx">
+								@vijethx
+							</a>
+						</li>
+					</ul>
 				</div>
-
-				<TechStack />
-				<Projects />
-				<Exploring />
-				{/* <p>getting redesigned. brb </p>
-				<p>
-					till then, find me on{" "}
-					<a
-						className="font-bold"
-						href={"https://twitter.com/vijethx"}>
-						twitter
-					</a>
-				</p> */}
 			</main>
-
-			<Footer />
 		</div>
 	);
 }
